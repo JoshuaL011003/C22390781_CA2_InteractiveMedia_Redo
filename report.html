@@ -1,0 +1,124 @@
+<!--
+Base starter code provided by lecturer.
+Extended and modified by Joshua Lurian for CA2: content, sections, layout changes, JS features, and styling updates.
+-->
+
+<!-- report.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CA2 Report | Joshua Lurian</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Same CSS as main site (keeps it consistent) -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+</head>
+
+<body>
+  <div id="container" class="container">
+
+    <!-- Simple nav -->
+    <nav class="navbar navbar-dark bg-dark px-3 fixed-top">
+      <a class="navbar-brand" href="index.html">Back to Portfolio</a>
+    </nav>
+
+    <section class="topics" id="report" style="border:1px solid">
+      <h4>CA2 Report</h4>
+      <p>
+        This page explains what Bootstrap components and JavaScript features I used for my CA2 one-page portfolio website.
+        The website is built using Bootstrap 5 and my own HTML/CSS/JavaScript.
+      </p>
+
+      <hr>
+
+      <h5>1) Bootstrap components used</h5>
+      <ul class="list-group mb-4">
+        <li class="list-group-item">
+          <b>Navbar (fixed-top)</b><br>
+          Used a Bootstrap navbar at the top of the page so the user can jump to each section.
+        </li>
+        <li class="list-group-item">
+          <b>Nav pills</b><br>
+          Used Bootstrap nav-pills for the navigation links (Home, About, Education, etc.).
+        </li>
+        <li class="list-group-item">
+          <b>Grid system (rows/columns)</b><br>
+          Used Bootstrap rows and columns for the Home section layout and the Contact section layout.
+        </li>
+        <li class="list-group-item">
+          <b>Buttons</b><br>
+          Used Bootstrap buttons for navigation (View Projects) and opening the contact modal.
+        </li>
+        <li class="list-group-item">
+          <b>Modal</b><br>
+          Used a Bootstrap modal to show contact information (Quick Contact).
+        </li>
+        <li class="list-group-item">
+          <b>Forms</b><br>
+          Used Bootstrap form controls for the Contact form (email, phone, category, message).
+        </li>
+        <li class="list-group-item">
+          <b>Alert</b><br>
+          Used a Bootstrap alert to show a success message after submitting the contact form.
+        </li>
+        <li class="list-group-item">
+          <b>List group</b><br>
+          Used Bootstrap list-group for Work Experience and Achievements to keep a clean layout.
+        </li>
+        <li class="list-group-item">
+          <b>Tables</b><br>
+          Used a Bootstrap table for Education module information.
+        </li>
+        <li class="list-group-item">
+          <b>Ratio (responsive embed)</b><br>
+          Used Bootstrap ratio to embed a responsive Google Maps iframe.
+        </li>
+      </ul>
+
+      <h5>2) Dynamic features (JavaScript)</h5>
+      <ul class="list-group mb-4">
+        <li class="list-group-item">
+          <b>ScrollSpy (active nav highlight)</b><br>
+          Used Bootstrap ScrollSpy in JavaScript so the navbar highlights the section the user is currently viewing.
+        </li>
+        <li class="list-group-item">
+          <b>Project filter dropdown (show/hide sections)</b><br>
+          Used JavaScript to show or hide project sections based on the dropdown selection.
+        </li>
+        <li class="list-group-item">
+          <b>Contact form success message</b><br>
+          When the form is submitted, JavaScript displays a success alert and clears the form fields.
+        </li>
+      </ul>
+
+      <h5>3) Hosted website URL</h5>
+      <div class="alert alert-info">
+        <b>Live site URL:</b>
+        <a href="https://example.com" target="_blank" rel="noopener">https://example.com</a>
+        <br>
+        (Replace this link with your real deployed GitHub Pages or Azure URL before submitting.)
+      </div>
+
+      <h5>4) Files included in my zip</h5>
+      <ul class="list-group mb-4">
+        <li class="list-group-item"><b>index.html</b> (main one-page portfolio)</li>
+        <li class="list-group-item"><b>report.html</b> (this report page)</li>
+        <li class="list-group-item"><b>css/styles.css</b></li>
+        <li class="list-group-item"><b>css/print.css</b></li>
+        <li class="list-group-item"><b>scripts/myScripts.js</b></li>
+        <li class="list-group-item"><b>images/</b> (all images used on the site)</li>
+      </ul>
+
+     
+    </section>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

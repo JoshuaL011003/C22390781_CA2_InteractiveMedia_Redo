@@ -1,0 +1,16 @@
+/* css/print.css */
+#container {
+  border: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+nav {
+  display: none;
+}
+
+.topics {
+  margin: 0;
+  padding: 1rem;
+  border: 0 !important;
+}

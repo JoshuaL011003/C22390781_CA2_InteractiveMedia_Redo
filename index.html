@@ -1,0 +1,437 @@
+<!--
+Base starter code provided by lecturer for DV lab.
+Extended and modified by Joshua Lurian for CA2: content, sections, layout changes, JS features, and styling updates.
+-->
+
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joshua Lurian | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- My stylesheet -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+  <!-- Print stylesheet -->
+  <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+</head>
+
+<body>
+  <div id="container" class="container">
+
+    <!-- Navigation -->
+    <nav id="navbar-main" class="navbar navbar-dark bg-dark px-3 fixed-top">
+      <a id="homeName" class="navbar-brand" href="#home">Joshua Lurian</a>
+
+      <ul class="nav nav-pills flex-wrap">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#aboutMe">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#workexperience">Work Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills Set</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies & Interests</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contactMe">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section class="topics" id="home" style="border:1px solid">
+      <h4>Home</h4>
+
+      <div class="row align-items-center g-4">
+        <div class="col-md-4 text-center">
+          <img src="images/Agefriendly.jpeg" class="img-fluid rounded" alt="Joshua Lurian profile photo" style="max-width: 260px;">
+        </div>
+
+        <div class="col-md-8">
+          <h5 class="mb-2">Joshua Lurian</h5>
+          <p class="mb-2">
+            Networking Technologies student at Technological University Dublin (TU Dublin). Graduated: <b>2025</b>.
+          </p>
+
+          <ul class="mb-3">
+            <li><b>Location:</b> Dublin, Ireland</li>
+            <li><b>Email:</b> <a href="mailto:joshualurian@gmail.com">joshualurian@gmail.com</a></li>
+            <li><b>Phone:</b> <a href="tel:+353838605521">083 860 5521</a></li>
+            <li><b>Languages:</b> English, Tagalog</li>
+          </ul>
+
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+
+            <!-- Modal button (CA requirement) -->
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Quick Contact (Modal)
+            </button>
+          </div>
+
+          <p class="mt-3 mb-0">
+            Interests: Linux systems, cloud fundamentals, networking security, CI/CD pipelines, and building small software/web projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="topics" id="aboutMe" style="border:1px solid">
+      <h4>About Me</h4>
+
+      <p>
+        I’m a TU Dublin student who has graduated from TU Dublin with a Level 7 Ordinary Degree in Networking Technologies.
+        I enjoy practical work: setting up systems, solving networking problems, and building small apps to automate tasks.
+      </p>
+
+      <p>
+        I have experience with Python and C, and I’ve worked on projects that involve CSV processing and web + SQL integration.
+        I also worked in retail, which helped me build strong communication, teamwork, and consistency under pressure.
+      </p>
+
+      <p class="mb-0">
+        Currently in my final year of studies at TU Dublin Tallaght studying cloud computing.
+        I’m eager to apply my skills in real-world settings and continue learning about cloud networking and pipeline automation.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="topics" id="education" style="border:1px solid">
+      <h4>Education</h4>
+
+      <p class="mb-2">
+        <b>Technological University Dublin (TU Dublin)</b> — Networking Technologies<br>
+        <b>Dates:</b> Sep 2022 – Oct 2025 &nbsp; | &nbsp; <b>Graduated:</b> 2025
+      </p>
+
+      <p class="mb-2"><b>Year 3 Modules Covered:</b></p>
+      <ul>
+        <li>Team Assignment</li>
+        <li>Work Placement</li>
+        <li>Internet of Things 301</li>
+        <li>Network Management</li>
+        <li>Project Management</li>
+        <li>Multimedia Voice Vid Network</li>
+        <li>Programming for Networked Systems</li>
+      </ul>
+
+      <p class="mb-2">
+        <b>Module grades:</b> Results are issued at the end of the academic year; this section is updated once confirmed.
+      </p>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Module</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Team Assignment</td><td>Completed</td></tr>
+          <tr><td>Work Placement</td><td>Completed</td></tr>
+          <tr><td>Internet of Things 301</td><td>Completed</td></tr>
+          <tr><td>Network Management</td><td>Completed</td></tr>
+          <tr><td>Project Management</td><td>Completed</td></tr>
+          <tr><td>Multimedia Voice Vid Network</td><td>Completed</td></tr>
+          <tr><td>Programming for Networked Systems</td><td>Completed</td></tr>
+        </tbody>
+      </table>
+
+      <br>
+
+      <p class="mb-2">
+        <b>Technological University Dublin (TU Dublin)</b> — Cloud Computing<br>
+        <b>Dates:</b> Sep 2025 – Present &nbsp; | &nbsp; <b>Expected:</b> Oct 2026
+      </p>
+
+      <p class="mb-2"><b>Cloud Computing Year 4 Modules Covered:</b></p>
+      <ul>
+        <li>Project (Cloud Stream)</li>
+        <li>System Operations in the Public Cloud</li>
+        <li>DevOps - Continuous Integration and Continuous Deployment</li>
+        <li>Interactive Media Design and Visualization</li>
+        <li>Crosslist - Private Cloud Architecture</li>
+        <li>Operations Research</li>
+        <li>Security for the Cloud and IoT</li>
+        <li>Digital Technology Strategy</li>
+        <li>Ethics and IT/Data Governance</li>
+      </ul>
+
+      <p class="mb-0">
+        <b>Module grades:</b> The course is ongoing; final confirmed percentages are issued at the end of the academic year.
+      </p>
+    </section>
+
+    <!-- PROJECTS (images removed) -->
+    <section class="topics" id="projects" style="border:1px solid">
+      <h4>Projects</h4>
+
+      <p class="mb-3">
+        Use the dropdown to filter project sections.
+      </p>
+
+      <select id="gallerySelect" class="form-select" aria-label="Project category select" onchange="showGalleryCategoryImages()" style="max-width: 20em;">
+        <option selected>Select Category</option>
+        <option value="1">All</option>
+        <option value="2">Software (Python)</option>
+        <option value="3">Web & Database</option>
+        <option value="4">Final Year Project</option>
+      </select>
+
+      <br>
+
+      <div id="SoftwareProjects">
+        <h5>2nd Year Project Software (Python)</h5>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <b>CSV encode/decode script</b><br>
+            Built a Python script that reads CSV files and encodes/decodes hidden messages.
+            It supports working with up to two files and speeds up the process compared to manual steps.
+          </li>
+          <li class="list-group-item">
+            <b>What I used</b><br>
+            Python file handling, basic functions, and clean input/output logic.
+          </li>
+        </ul>
+      </div>
+
+      <br><br>
+
+      <div id="WebDatabase">
+        <h5>3rd Year Project Web & Database</h5>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <b>Web + SQL project</b><br>
+            Built a web application connected to a SQL database. Includes login, basic data management, and CRUD features.
+          </li>
+          <li class="list-group-item">
+            <b>What I used</b><br>
+            SQL queries, simple forms, and basic backend logic to create, view, update, and delete records.
+          </li>
+        </ul>
+      </div>
+
+      <br><br>
+
+      <div id="finalYearProject">
+        <h5>Cloud Computing 4th Year Final Project</h5>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <b>Volleyball Stat Tracker</b><br>
+            Developing a web-based application to track and analyse volleyball game statistics.
+            Features include player profiles, match data input, and performance reports to help players and coaches improve.
+          </li>
+          <li class="list-group-item">
+            <b>Main goal</b><br>
+            Make stats easy to record during matches and generate simple summaries after games.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section class="topics" id="workexperience" style="border:1px solid">
+      <h4>Work Experience</h4>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <b>Dunnes Stores — Sales Assistant</b> (Charlestown, Dublin)<br>
+          <b>July 2022 – May 2024</b><br>
+          Customer service, stock handling, keeping the store organised, and supporting the team during busy times.
+        </li>
+        <li class="list-group-item">
+          <b>Sales support:</b> Helped improve monthly sales through upselling and good product knowledge.
+        </li>
+        <li class="list-group-item">
+          <b>Inventory accuracy:</b> Helped reduce stock errors by following consistent stock checks and procedures.
+        </li>
+        <li class="list-group-item">
+          <b>Teamwork:</b> Worked well with others to keep the shop floor running smoothly and customers supported.
+        </li>
+      </ul>
+        <br>
+       <h4>Age Friendly AI</h4>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <b>AgeFriendly AI — Assistant AI Collaborator</b> (TUDublin Grangegorman, Dublin)<br>
+          <b>Feb 2025 – August 2025</b><br>
+          Assisted in developing AI solutions to support elderly care, focusing on user-friendly interfaces and reliable performance.
+        </li>
+        <li class="list-group-item">
+          <b>Hard Worker:</b> Demonstrated strong work ethic and dedication to the project.
+        </li>
+        <li class="list-group-item">
+          <b>Fast Pace:</b> Adapted quickly to new tasks and deadlines.
+        </li>
+        <li class="list-group-item">
+          <b>Critical Thinking:</b> Applied problem-solving skills to overcome challenges.
+        </li>
+        <li class="list-group-item">
+          <b>Time Management:</b> Effectively balanced multiple responsibilities and met deadlines.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="topics" id="skills" style="border:1px solid">
+      <h4>Skills Set</h4>
+      <p>Main skills and areas I’m building through labs and coursework.</p>
+
+      <h5>Technical skills (summary)</h5>
+      <ul>
+        <li><b>Operating Systems:</b> Linux administration fundamentals</li>
+        <li><b>Cloud:</b> cloud concepts, cloud networking and security basics</li>
+        <li><b>Networking:</b> routing & switching concepts, troubleshooting</li>
+        <li><b>Security:</b> network security fundamentals</li>
+        <li><b>Programming:</b> Python, C</li>
+        <li><b>Web & Data:</b> SQL integration, CRUD applications</li>
+        <li><b>DevOps:</b> basic CI/CD concepts, pipelines, and automation interest</li>
+      </ul>
+
+      <p class="mb-0">
+        I focus on practical labs and small projects and improve by testing and fixing issues step-by-step.
+      </p>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="topics" id="achievements" style="border:1px solid">
+      <h4>Achievements</h4>
+      <p>Examples of outcomes from work and projects:</p>
+
+      <ul class="list-group">
+        <li class="list-group-item">Supported improved sales through upselling and strong customer interaction.</li>
+        <li class="list-group-item">Achieved best IoT award in 3rd year TUDublin demonstrating a smart car-parking system.</li>
+        <li class="list-group-item">Awarded musician of the year 2022.</li>
+        <li class="list-group-item">Received best photographer of the year 2022.</li>
+        <li class="list-group-item">Completed practical labs in Linux, cloud concepts, and networking troubleshooting.</li>
+      </ul>
+    </section>
+
+    <!-- HOBBIES -->
+    <section class="topics" id="hobbies" style="border:1px solid">
+      <h4>Hobbies & Interests</h4>
+      <p>I keep active and enjoy a mix of team sports and outdoor activities:</p>
+      <ul>
+        <li>Volleyball</li>
+        <li>Swimming</li>
+        <li>Hiking</li>
+        <li>Bowling</li>
+         <li>Golfing</li>
+        <li>Video Games</li>
+        <li>Cinematography</li>
+        <li>Basketball</li>
+      </ul>
+      <p class="mb-0">
+        These help with teamwork, routine, and staying consistent with goals.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="topics" id="contactMe" style="border:1px solid">
+      <h4>Contact Me</h4>
+      <p>Use the details or the form below.</p>
+
+      <div class="row g-4">
+        <!-- Details -->
+        <div class="col-12 col-lg-4">
+          <h5>My contact details</h5>
+          <p class="mb-2"><b>Email:</b> <a href="mailto:joshualurian@gmail.com">joshualurian@gmail.com</a></p>
+          <p class="mb-2"><b>Phone:</b> <a href="tel:+353838605521">083 860 5521</a></p>
+          <p class="mb-2"><b>Location:</b> Dublin, Ireland</p>
+          <p class="mb-2"><b>Profiles:</b> LinkedIn (Joshua Lurian), Indeed (Joshua Lurian)</p>
+
+          <button class="btn btn-primary mt-2" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
+            Open Contact Modal
+          </button>
+
+          <div class="alert alert-success mt-3" role="alert" id="successEmail" style="display:none;">
+            Message received (demo). Thanks for contacting me!
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="col-12 col-lg-4">
+          <h5>Send me a message</h5>
+
+          <form class="d-grid gap-3" onsubmit="event.preventDefault(); messageSent();">
+            <div class="form-group">
+              <label class="form-label" for="emailAddressInput">Email address</label>
+              <input class="form-control" id="emailAddressInput" type="email" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phoneNumberInput">Phone number</label>
+              <input class="form-control" id="phoneNumberInput" type="text" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="categoryInput">Category</label>
+              <select class="form-select" id="categoryInput" required>
+                <option selected>Projects</option>
+                <option>Education</option>
+                <option>Work Experience</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="messageInput">Message</label>
+              <textarea class="form-control" id="messageInput" rows="4" required></textarea>
+            </div>
+
+            <button class="btn btn-success" type="submit">Send</button>
+          </form>
+        </div>
+
+        <!-- Map -->
+        <div class="col-12 col-lg-4">
+          <h5>Map</h5>
+          <div class="ratio ratio-4x3">
+            <iframe
+              title="Map of Dublin"
+              src="https://www.google.com/maps?q=Dublin,Ireland&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Joshua Lurian - Contact Info</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <p class="mb-2"><b>Email:</b> <a href="mailto:joshualurian@gmail.com">joshualurian@gmail.com</a></p>
+            <p class="mb-2"><b>Phone:</b> <a href="tel:+353838605521">083 860 5521</a></p>
+            <p class="mb-2"><b>Location:</b> Dublin, Ireland</p>
+            <p class="mb-0"><b>Profiles:</b> LinkedIn (Joshua Lurian), Indeed (Joshua Lurian)</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a class="btn btn-primary" href="#contactMe" data-bs-dismiss="modal">Go to Contact Section</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your JS -->
+  <script src="scripts/myScripts.js"></script>
+</body>
+</html>

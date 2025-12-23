@@ -1,0 +1,71 @@
+/* css/styles.css */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #000000;
+
+  /* IMPORTANT for ScrollSpy */
+  position: relative;
+
+  /* Push content below fixed navbar */
+  padding-top: 70px;
+}
+
+#container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.topics {
+  margin: 2rem;
+
+  /* Keeps border away from text */
+  padding: 1.25rem;
+
+  /* Anchor offset so clicking nav lands correctly */
+  scroll-margin-top: 90px;
+
+  text-align: justify;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: yellow;
+}
+
+#homeName,
+h4,
+th {
+  color: #1f75fe;
+  font-weight: bold;
+}
+
+table thead {
+  background-color: black;
+}
+
+table th {
+  color: white;
+  text-align: left;
+}
+
+table td {
+  text-align: left;
+}
+
+.form-label,
+h5 {
+  font-weight: bold;
+}
+
+#contactMe h5 {
+  color: #1f75fe;
+}
+
+.list-group {
+  max-width: 100%;
+}
